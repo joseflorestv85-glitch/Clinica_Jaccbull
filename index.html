@@ -24,6 +24,17 @@
             line-height: 1.6;
         }
 
+        /* EFECTO DE ZOOM PARA LAS IMÁGENES */
+        .section-photo, .service-photo, .doctor-img {
+            transition: transform 0.3s ease;
+        }
+
+        .about-card:hover .section-photo, 
+        .service-box:hover .service-photo, 
+        .team-card:hover .doctor-img {
+            transform: scale(1.05);
+        }
+
         /* CABECERA CON LOGOTIPO ACTUALIZADO */
         header {
             background: #1a1a1a;
@@ -263,6 +274,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            overflow: hidden;
         }
 
         .doctor-img {
@@ -453,7 +465,7 @@
     <section class="hero">
         <h1>Excelencia en <span>Reproducción y Nutrición</span> BullS</h1>
         <p>Potenciamos la genética, cuidamos cada cruce y optimizamos el desarrollo nutricional de tus ejemplares de alto nivel.</p>
-        <a href="https://wa.me/tu_numero_de_whatsapp" class="btn" target="_blank">Consulta con un Especialista</a>
+        <a href="https://wa.me/584243222477" class="btn" target="_blank">Consulta con un Especialista</a>
     </section>
 
     <!-- SOBRE NOSOTROS / PILARES -->
@@ -591,7 +603,7 @@
     </footer>
 
     <!-- BOTÓN FLOTANTE WHATSAPP -->
-    <a href="https://wa.me/tu_numero_de_whatsapp" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/584243222477" class="whatsapp-float" target="_blank">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
